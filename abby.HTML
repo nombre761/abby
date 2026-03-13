@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>registro</title>
+  <title>abby</title>
   <style>
     /* Un poco de estilo para que no se vea tan simple */
     body { font-family: sans-serif; display: flex; justify-content: center; padding: 20px; background-color: #f4f4f9; }
@@ -32,7 +32,7 @@
 
 <script>
   // 1. REEMPLAZA ESTA URL con la de tu "Nueva Implementación" de Google Apps Script
-  const URL_WEB_APP = "https://script.google.com/macros/s/AKfycbyUP_0eS6aGtmAt4yTxAzWDfaZs6rYZTZhSWWEqk8KvuxARtiTHMouK6F7l6GIxBCl8/exec";
+  const URL_WEB_APP = "https://script.google.com/macros/s/AKfycbxttzf1hIA_2h64vHpjH5RhMamLfKq4suD_wYqwCE4Hjl8RydRceajsxy_CMx5R8FbB/exec";
 
   document.getElementById("formulario").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -45,10 +45,9 @@
     msg.innerHTML = "⏳ Procesando...";
 
     const datos = {
-      nombre: document.getElementById("nombre").value,
-      matricula: document.getElementById("matricula").value,
-      carrera: document.getElementById("carrera").value,
-      semestre: document.getElementById("semestre").value
+      mediana: document.getElementById("mediana").value,
+      moda: document.getElementById("moda").value,
+      promedio: document.getElementById("promedio").value,
     };
 
     // Usamos 'text/plain' y 'no-cors' para evitar errores de seguridad del navegador
