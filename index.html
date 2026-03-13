@@ -52,9 +52,9 @@
     // Usamos 'text/plain' y 'no-cors' para evitar errores de seguridad del navegador
     fetch(URL_WEB_APP, {
       method: "POST",
-      mode: "no-cors", 
+      headers: { 
       headers: {
-        "Content-Type": "text/plain"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify(datos)
     })
