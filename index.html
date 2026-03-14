@@ -44,18 +44,22 @@
     msg.innerHTML = "⏳ Procesando...";
 
     const datos = {
-      mediana: document.getElementById("mediana").value,
-      moda: document.getElementById("moda").value,
-      promedio: document.getElementById("promedio").value,
+     let mediana: document.getElementById("mediana").value,
+      let moda: document.getElementById("moda").value,
+      let promedio: document.getElementById("promedio").value,
+      
       let resultado = (mediana + moda + promedio) /3;
-    console.log(resultado);
+    const datos = {
+      mediana: mediana,
+      moda: moda,
+      promedio: promedio,
+      resultado: resultado,
     };
 
     // Usamos 'text/plain' y 'no-cors' para evitar errores de seguridad del navegador
     fetch(URL_WEB_APP, {
       method: "POST",
       headers: { 
-      headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(datos)
